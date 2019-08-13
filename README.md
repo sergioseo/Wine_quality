@@ -37,9 +37,9 @@ Se já tiver algum dos programas listados abaixo e quiser usá-los, apenas certi
     <li>Qual nível de acidez está associado a uma melhor qualidade?</li>
   </ol>
 
-### Inspecionando, limpando e organizando o DataSet
+### Parte 1: Avaliando o DataSet
 <p>A principio vamos inspecionar os dataSets <code>winequality-red.csv</code> e <code>winequality-white.csv</code>usando  <code>Pandas</code> e abri-los para verificar os rótulos e os separadores. No nosso caso temos <code>;</code>como separadores e não podemos esquecer de usar <code>sep=";"</code> para que as colunas sejam criadas separadamente.Também temos que nos atentar aos rótulos e uma dica q eu sempre dou é usar um editor simples (ATOM, SUBLIME, VSCODE, etc) para dar uma olhada e verificar se o dataSet possui rótulos como um cabeçalho.
-<p>Então iremos seguir os seguintes passos:</p>
+<p>Passaremos para os seguintes passos:</p>
 <ol>
   <li>Verificar o número de amostras em cada conjunto de dados</li>
   <li>Verificar o número de colunas em cada conjunto de dados</li>
@@ -49,8 +49,29 @@ Se já tiver algum dos programas listados abaixo e quiser usá-los, apenas certi
   <li>Verificar a densidade média em cada conjunto de dados</li>
 </ol>
 
-  
-  
+### Conclusão da Parte 1
+<p>Através desta rápida avaliação podemos chegar a algumas repostas interessantes:</p>
+  <ul>
+  <li>Os conjuntos de dados não possuem dados faltantes</li>
+  <li>Há valores duplicados mas a principio não tem necessidade de descartá-los</li>
+  <li>A densidade média do <b>Vinho Tinto = 0.996747</b> e a do <b>Vinho Branco = 0.994027</b></li>
+  </ul>
+<p>Para acessar os métodos utilizados <b><a href="https://github.com/sergioseo/Wine_quality/blob/master/avaliando_parte_1.ipynb">clique aqui</a></b>  
+</p>
+
+### Parte 2: Unindo os Datasets
+<p>Para podermos analisar com mais eficiência nossos datasets vamos combiná-los em um único DataFrame e acrescentar mais uma feature chamada <code>cor</code> para podermos identificar de qual conjunto de dados ele pertence. Para isso usaremos e importaremos o <code>Numpy</code></p>
+<p><b>OBS:</b> Ao unir e combinar as colunas teremos uma coluna que não será combinada por estar com o nome levemente errado e para resolver teremos que renomear a coluna <code>total_sulfur-dioxide</code> para <code>total_sulfur_dioxide</code> do dataset <code>winequality-red.csv</code> para que o método <code>append()</code>funcione perfeitamente.
+<p>Para acessar os métodos utilizados <b><a href="https://github.com/sergioseo/Wine_quality/blob/master/unindo_datasets_parte_2.ipynb">clique aqui</a></b>  
+</p>
+
+
+
+
+
+
+
+
 ## Concluindo
   <li>Foi disponibilizado um arquivo HTML com os dados e o resultado da análise. Para acessá lo <b><a href="https://github.com/sergioseo/MotivateCo/blob/master/chicago_bike.html">click aqui<a/></b>
   <li>Também está disponível uma versão da análise em <code>Python 3</code> para apreciação. Para acessá lo <b><a href="https://github.com/sergioseo/MotivateCo/blob/master/chicago_bike.py">click aqui<a/></b>
