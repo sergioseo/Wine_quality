@@ -77,8 +77,16 @@ Essa pergunta já é um pouco mais complicada porque, ao contrário da cor, que 
 <p>Para acessar os métodos utilizados <b><a href="https://github.com/sergioseo/Wine_quality/blob/master/comecando_as_analises_parte_3.ipynb">clique aqui</a></b>  
 </p>
 
-### Concluindo Parte 3
-<p>Desta forma podemos concluir que 
+### Conclusão da Parte 3
+<p>Desta forma podemos concluir que a qualidade média do vinho tinto é menor do que à do vinho branco e que o nível de acidez <b>"Baixo"</b> recebe a classificação média mais alta de acordo com esse diagrama:</p>
+<p>Níveis de acidez:</p>
+  <ul>
+    <li>Alto: Abaixo de 25% dos valores de pH</li>
+    <li>Moderadamente alto: 25% a 50% dos valores de pH</li>
+    <li>Médio: 50% a 75% dos valores de pH</li>
+    <li><b>Baixo: 75% ou mais dos valores de pH</b></li>
+  </ul>
+
   
 ## Parte 4: Continuando
 
