@@ -56,14 +56,14 @@ Se já tiver algum dos programas listados abaixo e quiser usá-los, apenas certi
   <li>Há valores duplicados mas a principio não tem necessidade de descartá-los</li>
   <li>A densidade média do <b>Vinho Tinto = 0.996747</b> e a do <b>Vinho Branco = 0.994027</b></li>
   </ul>
-<p>Para acessar os métodos utilizados <b><a href="https://github.com/sergioseo/Wine_quality/blob/master/avaliando_parte_1.ipynb">clique aqui</a></b>  
+<p>Para acessar os métodos utilizados nesta etapa<b><a href="https://github.com/sergioseo/Wine_quality/blob/master/avaliando_parte_1.ipynb">clique aqui</a></b>  
 </p>
 
 ## Parte 2: Unindo os Datasets
 
 <p>Para podermos analisar com mais eficiência nossos datasets vamos combiná-los em um único DataFrame e acrescentar mais uma feature chamada <code>cor</code> para podermos identificar de qual conjunto de dados ele pertence. Para isso usaremos e importaremos o <code>Numpy</code></p>
 <p><b>OBS:</b> Ao unir e combinar as colunas teremos uma coluna que não será combinada por estar com o nome levemente errado e para resolver teremos que renomear a coluna <code>total_sulfur-dioxide</code> para <code>total_sulfur_dioxide</code> do dataset <code>winequality-red.csv</code> para que o método <code>append()</code>funcione perfeitamente.
-<p>Assim teremos um novo DataFrame chamado <code>winequality_edited.csv</code>
+<p>Assim teremos um novo DataFrame chamado <code>winequality_edited.csv</code>. Para acessá-lo <b><a href="https://github.com/sergioseo/Wine_quality/blob/master/winequality_edited.csv">clique aqui</a></b>
 <p>Para acessar os métodos utilizados <b><a href="https://github.com/sergioseo/Wine_quality/blob/master/unindo_datasets_parte_2.ipynb">clique aqui</a></b>  
 </p>
 
