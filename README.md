@@ -17,7 +17,7 @@
   <li>Qualidade (que tem pontuação de 0 a 10)</li>
 </ul>
 
-## Primeiras Etapas
+## Primeira Etapa
 
 Se já tiver algum dos programas listados abaixo e quiser usá-los, apenas certifique-se de estarem atualizados e instalados corretamente. Para o bom funcionamento e a visualização correta do projeto será necessário o download de alguns arquivos:
 <ul>
@@ -37,7 +37,7 @@ Se já tiver algum dos programas listados abaixo e quiser usá-los, apenas certi
     <li>Qual nível de acidez está associado a uma melhor qualidade?</li>
   </ol>
 
-### Parte 1: Avaliando o DataSet
+## Parte 1: Avaliando o DataSet
 <p>A principio vamos inspecionar os dataSets <code>winequality-red.csv</code> e <code>winequality-white.csv</code>usando  <code>Pandas</code> e abri-los para verificar os rótulos e os separadores. No nosso caso temos <code>;</code>como separadores e não podemos esquecer de usar <code>sep=";"</code> para que as colunas sejam criadas separadamente.Também temos que nos atentar aos rótulos e uma dica q eu sempre dou é usar um editor simples (ATOM, SUBLIME, VSCODE, etc) para dar uma olhada e verificar se o dataSet possui rótulos como um cabeçalho.
 <p>Passaremos para os seguintes passos:</p>
 <ol>
@@ -59,14 +59,23 @@ Se já tiver algum dos programas listados abaixo e quiser usá-los, apenas certi
 <p>Para acessar os métodos utilizados <b><a href="https://github.com/sergioseo/Wine_quality/blob/master/avaliando_parte_1.ipynb">clique aqui</a></b>  
 </p>
 
-### Parte 2: Unindo os Datasets
+## Parte 2: Unindo os Datasets
+
 <p>Para podermos analisar com mais eficiência nossos datasets vamos combiná-los em um único DataFrame e acrescentar mais uma feature chamada <code>cor</code> para podermos identificar de qual conjunto de dados ele pertence. Para isso usaremos e importaremos o <code>Numpy</code></p>
 <p><b>OBS:</b> Ao unir e combinar as colunas teremos uma coluna que não será combinada por estar com o nome levemente errado e para resolver teremos que renomear a coluna <code>total_sulfur-dioxide</code> para <code>total_sulfur_dioxide</code> do dataset <code>winequality-red.csv</code> para que o método <code>append()</code>funcione perfeitamente.
+<p>Assim teremos um novo DataFrame chamado <code>winequality_edited.csv</code>
 <p>Para acessar os métodos utilizados <b><a href="https://github.com/sergioseo/Wine_quality/blob/master/unindo_datasets_parte_2.ipynb">clique aqui</a></b>  
 </p>
 
-
-
+## Parte 3: Começando as análises
+<p>Agora que temos o DataFrame limpo, organizado com a coluna de cores acrescentada podemos discutir essas questões:</p>
+<ul>
+  <li>Será que o tipo de vinho está associado a uma qualidade superior?</li>
+  <li>Qual o nível de acidez que recebe a maior avaliação média?</li>
+</ul>
+<p>Usaremos o método <code>groupby()</code> para agrupar os valores e conseguir criar novos rótulos para cada grupo</p>
+<p>Para acessar os métodos utilizados <b><a href="https://github.com/sergioseo/Wine_quality/blob/master/comecando_as_analises_parte_3.ipynb">clique aqui</a></b>  
+</p>
 
 
 
