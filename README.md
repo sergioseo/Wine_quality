@@ -69,15 +69,32 @@ Se já tiver algum dos programas listados abaixo e quiser usá-los, apenas certi
 
 ## Parte 3: Começando as análises
 <p>Agora que temos o DataFrame limpo, organizado com a coluna de cores acrescentada podemos discutir essas questões:</p>
-<ul>
-  <li>Será que o tipo de vinho está associado a uma qualidade superior?</li>
-  <li>Qual o nível de acidez que recebe a maior avaliação média?</li>
-</ul>
-<p>Usaremos o método <code>groupby()</code> para agrupar os valores e conseguir criar novos rótulos para cada grupo</p>
+<p><b>1. Será que o tipo de vinho está associado a uma qualidade superior?</b></br>
+  Para esta pergunta iremos comparar a qualidade média do vinho tinto à qualidade média do vinho branco usando <code>groupby()</code>. Faremos esse agrupamento por cor e, depois, encontraremos a qualidade média de cada grupo.</p>
+<p><b>2. Qual o nível de acidez (valor de ph) que recebe a maior avaliação média?</b></br>
+Essa pergunta já é um pouco mais complicada porque, ao contrário da cor, que possui categorias claras pelas quais você pode agrupar (tinto ou branco), pH é uma variável quantitativa, sem categorias claras. No entanto, existe uma solução simples para isso: Iremos criar uma variável categórica de uma variável quantitativa criando suas próprias categorias. A função <code>cut()</code> do <code>Pandas</code> permite que você “corte” os dados em grupos podendo assim usar essa função. Daí iremos criar uma nova coluna chamada <code>acidity_levels</code> com essas categorias.</p>
+<p>Usaremos métodos como <code>groupby()</code> e <code>cut()</code> para agrupar os valores e "cortá-los", conseguindo assim criar novos rótulos e valores para cada grupo</p>
 <p>Para acessar os métodos utilizados <b><a href="https://github.com/sergioseo/Wine_quality/blob/master/comecando_as_analises_parte_3.ipynb">clique aqui</a></b>  
 </p>
 
+### Concluindo Parte 3
+<p>Desta forma podemos concluir que 
+  
+## Parte 4: Continuando
 
+<p>Seguiremos com a análise nos atentando a mais essas questões:</p>
+<p><b>1. Será que vinhos com maior teor alcóolico recebem avaliações melhores?</b></br>
+Para responder a essa pergunta usaremos <code>query()</code> para criar dois grupos de amostras de vinho:</p>
+  <ul>
+    <li>Baixo álcool (amostras com um teor alcoólico abaixo da média)</li>
+    <li>Alto álcool (amostras com um teor alcoólico maior ou igual à média)</li>
+  </ul>
+<p>Em seguida encontraremos a classificação média de qualidade de cada grupo<p>
+<p><b>2. Será que vinhos mais suaves recebem avaliações melhores?</b></br>
+Da mesma forma usaremos a mediana para dividir as amostras em dois grupos, por açúcar residual, e encontrar a classificação média de qualidade de cada grupo.</p>
+<p>Usaremos métodos como <code>query()</code> para fixar padrões e obter os resultados para as questões propostas acima</p>
+<p>Para acessar os métodos utilizados <b><a href="https://github.com/sergioseo/Wine_quality/blob/master/continuando_parte_4.ipynb">clique aqui</a></b>  
+</p>
 
 
 
