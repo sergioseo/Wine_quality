@@ -119,7 +119,7 @@ Da mesma forma usaremos a mediana para dividir as amostras em dois grupos, por a
   <li><b>Vinhos mais suaves recebem avaliações melhores?</b></li>
   <li><b>Qual o nível de acidez que recebe a maior avaliação média?</b></li>
 </ul>
-<p>Para acessar os métodos utilizados <b><a href="">clique aqui</a></b></p>
+<p>Para acessar os métodos utilizados <b><a href="https://github.com/sergioseo/Wine_quality/blob/master/visualizacoes_vinhos.ipynb">clique aqui</a></b></p>
 
 ### Plotando gráficos com tipo de vinho e qualidade
 <p>Iremos colocar os dois tipos de vinhos em um mesmo gráfico usando <code>matplotlib</code> para podermos ver em detalhes a proporção de cada um de acordo com sua qualidade</p>
