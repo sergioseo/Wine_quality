@@ -28,6 +28,7 @@ Se já tiver algum dos programas listados abaixo e quiser usá-los, apenas certi
 </ul>
   
 ### Algumas questões antes de começar
+
 <p>É importante pensarmos em algumas questões relevantes ao projeto antes de começar a de fato explorar o dataSet; tais como:
   <ol>
     <li>Quais características químicas são mais importantes para prever a qualidade do vinho?</li>
@@ -38,6 +39,7 @@ Se já tiver algum dos programas listados abaixo e quiser usá-los, apenas certi
   </ol>
 
 ## Parte 1: Avaliando o DataSet
+
 <p>A principio vamos inspecionar os dataSets <code>winequality-red.csv</code> e <code>winequality-white.csv</code>usando  <code>Pandas</code> e abri-los para verificar os rótulos e os separadores. No nosso caso temos <code>;</code>como separadores e não podemos esquecer de usar <code>sep=";"</code> para que as colunas sejam criadas separadamente.Também temos que nos atentar aos rótulos e uma dica q eu sempre dou é usar um editor simples (ATOM, SUBLIME, VSCODE, etc) para dar uma olhada e verificar se o dataSet possui rótulos como um cabeçalho.
 <p>Passaremos para os seguintes passos:</p>
 <ol>
@@ -50,6 +52,7 @@ Se já tiver algum dos programas listados abaixo e quiser usá-los, apenas certi
 </ol>
 
 ### Conclusão da Parte 1
+
 <p>Através desta rápida avaliação podemos chegar a algumas repostas interessantes:</p>
   <ul>
   <li>Os conjuntos de dados não possuem dados faltantes</li>
@@ -68,6 +71,7 @@ Se já tiver algum dos programas listados abaixo e quiser usá-los, apenas certi
 </p>
 
 ## Parte 3: Começando as análises
+
 <p>Agora que temos o DataFrame limpo, organizado com a coluna de cores acrescentada podemos discutir essas questões:</p>
 <p><b>1. Será que o tipo de vinho está associado a uma qualidade superior?</b></br>
   Para esta pergunta iremos comparar a qualidade média do vinho tinto à qualidade média do vinho branco usando <code>groupby()</code>. Faremos esse agrupamento por cor e, depois, encontraremos a qualidade média de cada grupo.</p>
@@ -78,6 +82,7 @@ Essa pergunta já é um pouco mais complicada porque, ao contrário da cor, que 
 </p>
 
 ### Conclusão da Parte 3
+
 <p>Desta forma podemos concluir que a qualidade média do vinho tinto é menor do que à do vinho branco e que o nível de acidez <b>"Baixo"</b> recebe a classificação média mais alta de acordo com esse diagrama:</p>
 <p><b>Níveis de acidez:</b></p>
   <ul>
@@ -87,9 +92,7 @@ Essa pergunta já é um pouco mais complicada porque, ao contrário da cor, que 
     <li><b>Baixo: 75% ou mais dos valores de pH</b></li>
   </ul>
 
-  
 ## Parte 4: Continuando
-
 <p>Seguiremos com a análise nos atentando a mais essas questões:</p>
 <p><b>1. Será que vinhos com maior teor alcóolico recebem avaliações melhores?</b></br>
 Para responder a essa pergunta usaremos <code>query()</code> para criar dois grupos de amostras de vinho:</p>
@@ -101,12 +104,23 @@ Para responder a essa pergunta usaremos <code>query()</code> para criar dois gru
 <p><b>2. Será que vinhos mais suaves recebem avaliações melhores?</b></br>
 Da mesma forma usaremos a mediana para dividir as amostras em dois grupos, por açúcar residual, e encontrar a classificação média de qualidade de cada grupo.</p>
 <p>Usaremos métodos como <code>query()</code> para fixar padrões e obter os resultados para as questões propostas acima</p>
-<p>Para acessar os métodos utilizados <b><a href="https://github.com/sergioseo/Wine_quality/blob/master/continuando_parte_4.ipynb">clique aqui</a></b>  
-</p>
+<p>Para acessar os métodos utilizados <b><a href="https://github.com/sergioseo/Wine_quality/blob/master/continuando_parte_4.ipynb">clique aqui</a></b></p>
 
+### Conclusão da Parte 4
+<p>Desta forma podemos concluir que os vinhos com maior teor alcoólico e os vinhos mais doces geralmente recebem melhores avaliações.</p>
 
+## Parte 5: Data Visualization
+<p>Agora que temos a maioria das nossas conclusões feitas sobre a qualidade do vinho e suas propriedas, poderemos utilizar de bibliotecas como <code>seaborn</code> e <code>matplotlib</code> para plotar gráficos e diagramas que irão nos auxiliar a entender melhor o comportamento de algumas variáveis e a fechar as conclusões restantes</p>
 
-## Concluindo
-  <li>Foi disponibilizado um arquivo HTML com os dados e o resultado da análise. Para acessá lo <b><a href="https://github.com/sergioseo/MotivateCo/blob/master/chicago_bike.html">click aqui<a/></b>
-  <li>Também está disponível uma versão da análise em <code>Python 3</code> para apreciação. Para acessá lo <b><a href="https://github.com/sergioseo/MotivateCo/blob/master/chicago_bike.py">click aqui<a/></b>
+### Plotando algumas questões acima
+<p>Iremos usar o data visualization para plotar algumas querys que foram mencionadas acima para podermos ter um melhor entendimento das conclusões usando <code>matplotlib</code>, tais como:</br>
+<ul>
+  <li><b>Será que vinhos com maior teor alcóolico recebem avaliações melhores?</b></li>
+  <li><b>Vinhos mais suaves recebem avaliações melhores?</b></li>
+  <li><b>Qual o nível de acidez que recebe a maior avaliação média?</b></li>
+</ul>
+<p>Para acessar os métodos utilizados <b><a href="">clique aqui</a></b></p>
 
+### Plotando gráficos com tipo de vinho e qualidade
+<p>Iremos colocar os dois tipos de vinhos em um mesmo gráfico usando <code>matplotlib</code> para podermos ver em detalhes a proporção de cada um de acordo com sua qualidade</p>
+<p>Para acessar os métodos utilizados <b><a href="https://github.com/sergioseo/Wine_quality/blob/master/plotando_tipo_qualidade.ipynb">clique aqui</a></b></p>
